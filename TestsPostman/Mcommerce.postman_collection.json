@@ -1,0 +1,59 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Mcommerce",
+		"_postman_id": "8c607641-14a9-574b-124b-2fa48ea4dc75",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin Produits",
+			"request": {
+				"url": "http://localhost:9090/AdminProduits",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nom\": \"TV\",\r\n    \"prix\": 2000\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tri alphabetique du nom",
+			"request": {
+				"url": "http://localhost:9090/Produits/sortByName",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nom\": \"TV\",\r\n    \"prix\": 2000\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout de  produit",
+			"request": {
+				"url": "http://localhost:9090/Produits",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":8,\r\n    \"nom\": \"TV Oled\",\r\n    \"prix\": 0,\r\n    \"prixAchat\": 50\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
